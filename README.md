@@ -23,7 +23,7 @@ $ gulp build
 ```
 * Visit the Settings area of your GitHub account.
 * Select "Personal Access Tokens" from the sidebar and hit "Generate New Token".
-* Do not select any option.  Click on "Generate Token".
+* Do not select any options.  Click on "Generate Token".
 * Create a file named .env at the top level of your directory.
 * Place your token in the .env file (i.e. exports.apiKey = "YOUR-KEY";)
 * Include the .env file in .gitignore and require the apiKey variable in your js file(s).
