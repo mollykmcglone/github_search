@@ -21,12 +21,14 @@ $ gulp build
 ```
 ###Get and properly store your own GitHub API key:
 ```
-* Visit the Settings area of your GitHub account, select Personal Access Tokens from the sidebar, and hit Generate New Token.
-* GitHub will offer a list of options. Do not select any. These grant read/write permissions and access to personal data. Finally, select Generate Token.
-* Place your token in an .env file at the top level of your directory.
-* Include the .env file in .gitignore.
+* Visit the Settings area of your GitHub account.
+* Select "Personal Access Tokens" from the sidebar and hit "Generate New Token".
+* Do not select any option.  Click on "Generate Token".
+* Create a file named .env at the top level of your directory.
+* Place your token in the .env file (i.e. exports.apiKey = "YOUR-KEY";)
+* Include the .env file in .gitignore and require the apiKey variable in your js file(s).
 ```
-###Start the local server and view the project(from command line):
+###Start the local server and view the project (from command line):
 ```
 $ gulp serve
 ```
