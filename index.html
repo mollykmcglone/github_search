@@ -1,25 +1,45 @@
 <html>
   <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Gihub User Search</title>
+    <title>GitHub User Search</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Github User Search!</h1>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>GitHub User Search</h1>
+        <p class="lead">Find a user and see what they've been working on</p>
       <form class="search-form">
-        <label for="username">Enter a Github username to see what that user has been working on:</label>
-        <input id="username" type="text">
-        <button class="btn-success">Search</button>
+        <div class="row" id="search">
+          <div class="col-sm-4 col-sm-offset-3">
+            <div class="form-group">
+              <label for="username" class="sr-only">Enter GitHub Username here:</label>
+              <input class="form-control input-lg" type="text" name="username" id="username" placeholder="Enter a GitHub username">
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <button type='submit' class="btn btn-success btn-lg btn-block">Search</button>
+          </div>
+        </div>
       </form>
-      <div class="showResults">
-        <h2 id="title"></h2>
-        <p id="showButton"></p>
-        <h3 id="title2"></h3>
-        <ul id="showRepos"></ul>
+    </div>
+      <div class="well">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 center" id="showResults">
+          </div>
+          <div class="col-sm-4 col-sm-offset-4">
+            <br><button class="btn btn-primary btn-large btn-block" id="seeRepos">See recent projects</button>
+            <button class="btn btn-warning btn-large btn-block" id="hideRepos">Hide projects</button>
+          </div>
+          <div class="col-sm-8 col-sm-offset-2" id="showRepos"></div>
+          </div>
+        </div>
       </div>
+    <div class="footer">
+      <br><p>&copy; 2016 Molly McGlone</p>
     </div>
   </body>
 </html>

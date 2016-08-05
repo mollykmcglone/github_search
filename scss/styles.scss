@@ -1,0 +1,58 @@
+.jumbotron {
+  background: url("/../img/codepaper.png") center center;
+  background-size: cover;
+  text-align: center;
+  background-color: inherit;
+}
+
+.jumbotron h1 {
+  font-size: 6em;
+  color: #003366;
+}
+
+.jumbotron p {
+  font-size: 2em;
+}
+
+@media (max-width: 992px){
+  img {
+    display: none;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-top: 5em;
+}
+
+#search {
+  margin-top: 3em;
+}
+
+#seeRepos {
+  display: none;
+  font-size: 1.4em;
+}
+
+#hideRepos {
+  display: none;
+  font-size: 1.4em;
+}
+
+.center {
+  text-align: center;
+}
