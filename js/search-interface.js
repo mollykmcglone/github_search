@@ -12,7 +12,10 @@ var displaySearch = function(username, public_repos) {
 var displayRepos = function(username, repos) {
   $('#title2').text("Here are the 30 repos they've updated most recently:");
   repos.forEach(function(repo) {
-    $('#showRepos').append("<li><a href='" + repo.html_url +"'</a>" + repo.name + "</li>");
+    if (repo.description === null) {
+      repo.description = "No description provided"
+    }
+    $('#showRepos').append('<li><a href=' + repo.html_url + '>' + repo.name + '</a> ' + repo.description + '</li>');
   });
 };
 
